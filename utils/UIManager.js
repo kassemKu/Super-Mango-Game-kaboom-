@@ -195,7 +195,7 @@ class UIManager {
     ]);
 
     this.displayBlinkUIMessage(
-      "Press [ Enter ] to Play Again, Eza rgaaal",
+      "Press [ Enter ] to Play Again, Eza rgaaal, ya khoroooooooo",
       vec2(center().x, center().y + 100)
     );
 

@@ -78,6 +78,8 @@ const scenes = {
 
     uiManager.displayLivesCount();
     player.updateLives(uiManager.livesCountUI);
+
+    uiManager.display1Message();
   },
   2: () => {
     setGravity(1400);
@@ -139,6 +141,8 @@ const scenes = {
 
     uiManager.displayLivesCount();
     player.updateLives(uiManager.livesCountUI);
+
+    uiManager.display2Message();
   },
   3: () => {
     setGravity(1400);
@@ -179,6 +183,8 @@ const scenes = {
 
     uiManager.displayLivesCount();
     player.updateLives(uiManager.livesCountUI);
+
+    uiManager.display3Message();
   },
   gameover: () => {
     uiManager.displayGameOverScreen();

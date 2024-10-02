@@ -98,7 +98,7 @@ class UIManager {
     ]);
     const controlPrompts = add([pos(center().x + 30, center().y)]);
 
-    controlPrompts.add([sprite("up"), pos(0, -80)]);
+    controlPrompts.add([sprite("up"), pos(0, -90)]);
     controlPrompts.add([sprite("down")]);
     controlPrompts.add([sprite("left"), pos(-80, 0)]);
     controlPrompts.add([sprite("right"), pos(80, 0)]);
@@ -124,16 +124,58 @@ class UIManager {
     });
   }
 
+  display1Message() {
+    add([
+      text("Ana Ma3lmak inta weah wlaaaaak!", {
+        size: 50,
+        font: "Round",
+      }),
+      area(),
+      anchor("center"),
+      pos(center().x + 3000, center().y - 350),
+    ]);
+  }
+
+  display2Message() {
+    add([
+      text(
+        "Ka2noo ma 3agbak habibi... rooh d2 rask bl walll 3m tfhm wlaaaak!!!",
+        {
+          size: 50,
+          font: "Round",
+        }
+      ),
+      area(),
+      anchor("center"),
+      pos(center().x + 3000, center().y - 350),
+    ]);
+  }
+
+  display3Message() {
+    add([
+      text(
+        "Ma2laf mn 3andak... 2lt ll3alm ano ant saweet al game fashart wlaak gahl",
+        {
+          size: 50,
+          font: "Round",
+        }
+      ),
+      area(),
+      anchor("center"),
+      pos(center().x + 1500, center().y - 350),
+    ]);
+  }
+
   displayGameOverScreen() {
     add([rect(1280, 720), color(0, 0, 0)]);
     add([
-      text("Game Over!", { size: 50, font: "Round" }),
+      text("noooooooob hahahahahaha", { size: 50, font: "Round" }),
       area(),
       anchor("center"),
       pos(center()),
     ]);
     this.displayBlinkUIMessage(
-      "Press [Enter] to restart Game",
+      "Press [Enter] to restart Game. booot",
       vec2(center().x, center().y + 100)
     );
 
@@ -146,14 +188,14 @@ class UIManager {
   displayEndGameScreen() {
     add([rect(1280, 720), color(0, 0, 0)]);
     add([
-      text("You Won! Thanks for Playing.", { size: 50, font: "Round" }),
+      text("You Won! Thanks for Playing. Ya nob.", { size: 50, font: "Round" }),
       area(),
       anchor("center"),
       pos(center()),
     ]);
 
     this.displayBlinkUIMessage(
-      "Press [ Enter ] to Play Again",
+      "Press [ Enter ] to Play Again, Eza rgaaal",
       vec2(center().x, center().y + 100)
     );
 
